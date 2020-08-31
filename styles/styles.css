@@ -3,11 +3,37 @@
     src: url("../assets/Sketcher.ttf")
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto';
     width:100%;
     background-color:#f2f2f2;
     color:#174166;
+    scroll-behavior: smooth;
+}
+
+#scrolltotop-button {
+    background-color:#f2f2f2;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+}
+  
+#scrolltotop-button img{
+    width: 20px;
+    height: 20px;
+}
+#scrolltotop-button:hover {
+    background-color: #0D2840; /* Add a dark-grey background on hover */
 }
 
 .navcontainer{
